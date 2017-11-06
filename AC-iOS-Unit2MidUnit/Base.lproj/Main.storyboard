@@ -1,28 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CNd-5s-pTv">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Polonius Monologue-->
+        <scene sceneID="jax-o6-tfl">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AC_iOS_Unit2MidUnit" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Poz-2c-HcR" customClass="PoloniusViewController" customModule="AC_iOS_Unit2MidUnit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8f6-Da-3hX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polonius Monologue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8U4-YI-jPd">
+                                <rect key="frame" x="0.0" y="70" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5T-yj-kbu">
+                                <rect key="frame" x="0.0" y="382" width="320" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Next Line">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextLineButtonPressed:" destination="Poz-2c-HcR" eventType="touchUpInside" id="OLb-dQ-jsL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yed-lU-ecN">
+                                <rect key="frame" x="160" y="269.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h5T-yj-kbu" firstAttribute="leading" secondItem="gTR-Jh-mCL" secondAttribute="leading" id="425-JO-fEL"/>
+                            <constraint firstItem="gTR-Jh-mCL" firstAttribute="bottom" secondItem="h5T-yj-kbu" secondAttribute="bottom" constant="108" id="4VS-mc-Ouc"/>
+                            <constraint firstItem="8U4-YI-jPd" firstAttribute="width" secondItem="8f6-Da-3hX" secondAttribute="width" id="4bI-M7-dR5"/>
+                            <constraint firstItem="Yed-lU-ecN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTR-Jh-mCL" secondAttribute="leading" id="7cu-gV-0RR"/>
+                            <constraint firstItem="Yed-lU-ecN" firstAttribute="centerX" secondItem="gTR-Jh-mCL" secondAttribute="centerX" id="Emt-jO-r3U"/>
+                            <constraint firstItem="h5T-yj-kbu" firstAttribute="centerX" secondItem="gTR-Jh-mCL" secondAttribute="centerX" id="Jdh-Z4-yqQ"/>
+                            <constraint firstItem="Yed-lU-ecN" firstAttribute="centerY" secondItem="gTR-Jh-mCL" secondAttribute="centerY" id="W05-RA-Njj"/>
+                            <constraint firstItem="gTR-Jh-mCL" firstAttribute="trailing" secondItem="h5T-yj-kbu" secondAttribute="trailing" id="fpN-pp-BCb"/>
+                            <constraint firstItem="8U4-YI-jPd" firstAttribute="centerX" secondItem="gTR-Jh-mCL" secondAttribute="centerX" id="pqA-Vj-dIi"/>
+                            <constraint firstItem="gTR-Jh-mCL" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Yed-lU-ecN" secondAttribute="trailing" id="sdH-ki-0Ms"/>
+                            <constraint firstItem="8U4-YI-jPd" firstAttribute="top" secondItem="gTR-Jh-mCL" secondAttribute="top" constant="50" id="vxr-Ip-LQo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gTR-Jh-mCL"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Polonius Monologue" image="icons8-skull-filled (1)" selectedImage="icons8-skull-filled (1)" id="Ovq-5S-oOx"/>
+                    <connections>
+                        <outlet property="monologueLabel" destination="Yed-lU-ecN" id="xnB-KZ-QQK"/>
+                        <outlet property="tabNameLabel" destination="8U4-YI-jPd" id="iBe-Yh-ZUH"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0T-Ox-OMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1534.7826086956522" y="131.25"/>
+        </scene>
+        <!--Romeo and Juliet: Scene IV-->
+        <scene sceneID="zFd-Z8-uF3">
+            <objects>
+                <viewController id="L8B-nm-fyo" customClass="RomeoAndJulietViewController" customModule="AC_iOS_Unit2MidUnit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="alJ-V5-lsG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Romeo and Juliet: Scene IV  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9G-AA-cm4">
+                                <rect key="frame" x="45" y="70" width="230" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Romeo, Benvolio or Mercutio" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nZk-hc-z9H">
+                                <rect key="frame" x="8" y="127" width="304" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="L8B-nm-fyo" id="Pv7-OT-MD5"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jIU-Nn-j4e">
+                                <rect key="frame" x="8" y="219" width="304" height="292"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect Input!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIe-qY-ttk">
+                                <rect key="frame" x="101" y="182" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Be-dk-fvM" firstAttribute="bottom" secondItem="jIU-Nn-j4e" secondAttribute="bottom" constant="8" id="3bN-2v-kbb"/>
+                            <constraint firstItem="ZIe-qY-ttk" firstAttribute="centerX" secondItem="6Be-dk-fvM" secondAttribute="centerX" id="EYm-O5-Hyn"/>
+                            <constraint firstItem="jIU-Nn-j4e" firstAttribute="top" secondItem="nZk-hc-z9H" secondAttribute="bottom" constant="62" id="dgu-BX-W9x"/>
+                            <constraint firstItem="nZk-hc-z9H" firstAttribute="leading" secondItem="6Be-dk-fvM" secondAttribute="leading" constant="8" id="fAG-du-rty"/>
+                            <constraint firstItem="6Be-dk-fvM" firstAttribute="trailing" secondItem="nZk-hc-z9H" secondAttribute="trailing" constant="8" id="jIw-0E-B75"/>
+                            <constraint firstItem="Q9G-AA-cm4" firstAttribute="top" secondItem="6Be-dk-fvM" secondAttribute="top" constant="50" id="mVo-VQ-nPF"/>
+                            <constraint firstItem="jIU-Nn-j4e" firstAttribute="top" secondItem="ZIe-qY-ttk" secondAttribute="bottom" constant="16" id="nP7-2g-wpU"/>
+                            <constraint firstItem="nZk-hc-z9H" firstAttribute="centerX" secondItem="6Be-dk-fvM" secondAttribute="centerX" id="p5S-bR-b6g"/>
+                            <constraint firstItem="jIU-Nn-j4e" firstAttribute="leading" secondItem="6Be-dk-fvM" secondAttribute="leading" constant="8" id="s5t-hg-NQA"/>
+                            <constraint firstItem="ZIe-qY-ttk" firstAttribute="top" secondItem="nZk-hc-z9H" secondAttribute="bottom" constant="25" id="sAz-pE-Wnj"/>
+                            <constraint firstItem="Q9G-AA-cm4" firstAttribute="centerX" secondItem="6Be-dk-fvM" secondAttribute="centerX" id="xhh-An-MVO"/>
+                            <constraint firstItem="nZk-hc-z9H" firstAttribute="top" secondItem="Q9G-AA-cm4" secondAttribute="bottom" constant="36" id="yJI-dl-5u2"/>
+                            <constraint firstItem="6Be-dk-fvM" firstAttribute="trailing" secondItem="jIU-Nn-j4e" secondAttribute="trailing" constant="8" id="zTf-nf-w4S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Be-dk-fvM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Romeo and Juliet: Scene IV" image="icons8-medical-heart-filled" selectedImage="icons8-medical-heart-filled" id="wFX-uQ-jXH"/>
+                    <connections>
+                        <outlet property="RandJTabLabel" destination="Q9G-AA-cm4" id="cuu-Sb-1wm"/>
+                        <outlet property="RandJTextField" destination="nZk-hc-z9H" id="jEP-Jc-Wgz"/>
+                        <outlet property="characterLinesLabel" destination="jIU-Nn-j4e" id="65n-gG-4pt"/>
+                        <outlet property="incorrectInputLabel" destination="ZIe-qY-ttk" id="alw-AY-ne8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TvS-mL-AJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534.7826086956522" y="865.76086956521749"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Fev-V8-3v7">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CNd-5s-pTv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y2b-CI-Olk">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Poz-2c-HcR" kind="relationship" relationship="viewControllers" id="ILy-AU-Q4X"/>
+                        <segue destination="L8B-nm-fyo" kind="relationship" relationship="viewControllers" id="hld-Q1-2n6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Egd-kN-OfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-medical-heart-filled" width="28" height="28"/>
+        <image name="icons8-skull-filled (1)" width="28" height="28"/>
+    </resources>
 </document>

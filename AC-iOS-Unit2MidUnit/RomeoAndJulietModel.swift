@@ -72,4 +72,13 @@ struct RomeoAndJulietModel {
         Too rude, too boisterous, and it pricks like thorn.
         """
         ]
+    func romeoLines() -> String {
+        return sceneFourTextArr.filter{$0.starts(with: "ROMEO:")}.joined(separator: "\n \n")
+    }
+    func mercutioLines() -> String {
+        return sceneFourTextArr.filter{$0.starts(with: "MERCUTIO:")}.joined(separator: "\n \n")
+    }
+    func benvolioLines() -> String {
+        return sceneFourTextArr.filter{$0.starts(with: "BENVOLIO:")}.joined(separator: "\n \n")
+    }
 }
